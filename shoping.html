@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>Item Table</title>
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 3px solid ;
+            color:black;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        button {
+            padding: 5px 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+<h1>Product Table</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Image</th>
+            <th>Stock</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>BODY LOTIONS</td>
+            <td><img src="C:\Users\lenovo\Downloads\download.jfif" alt="Item 1"></td>
+            <td>Available</td>
+            <td>400.00</td>
+            <td><button onclick="addToCart('BODY LOTIONS')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>SHAMPOO</td>
+            <td><img src="C:\Users\lenovo\Downloads\61hx7flvupL.jpg" alt="Item 2"></td>
+            <td>Out of Stock</td>
+            <td>150.00</td>
+            <td><button onclick="addToCart('SHAMPOO')" disabled>Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>SOAPS</td>
+            <td><img src="C:\Users\lenovo\Downloads\51wuCKMuqzL._AC_.jpg" alt="Item 3"></td>
+            <td>Available</td>
+            <td>250.00</td>
+            <td><button onclick="addToCart('SOAPS')">Add to Cart</button></td>
+        </tr>
+        <tr>
+            <td>OILS</td>
+            <td><img src="C:\Users\lenovo\Downloads\download4.jfif" alt="Item 3"></td>
+            <td>Available</td>
+            <td>300.00</td>
+            <td><button onclick="addToCart('OILS')">Add to Cart</button></td>
+        </tr>
+         <tr>
+            <td>DRY FRUITS</td>
+            <td><img src="C:\Users\lenovo\Downloads\download5.jfif" alt="Item 3"></td>
+            <td>Available</td>
+            <td>250.00</td>
+            <td><button onclick="addToCart('DRY FRUITS')">Add to Cart</button></td>
+        </tr>
+         <tr>
+            <td>COFFEE POWDER</td>
+            <td><img src="C:\Users\lenovo\Downloads\download6.jfif" alt="Item 3"></td>
+            <td>Available</td>
+            <td>250.00</td>
+            <td><button onclick="addToCart('COFFEE POWDER')">Add to Cart</button></td>
+        </tr>
+
+
+
+    </tbody>
+</table>
+
+<script>
+    function addToCart(itemName) {
+        alert(itemName + ' has been added to your cart!');
+    }
+</script>
+
+</body>
+</html>
